@@ -1,0 +1,144 @@
+.offers-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 0; /* Elimina el margen inferior */
+}
+.offers-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #a91f8c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.offers-subtitle {
+  font-size: 16px;
+  color: #6d6d6d;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden; /* Oculta las ofertas fuera del contenedor */
+  width: 100%;
+  height: 400px; /* Ajusta la altura según el diseño */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 350px; /* Ajusta el tamaño de la tarjeta */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  text-align: center;
+}
+
+.carousel-item.active {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.offer-image {
+  margin: 0 auto; /* Centra la imagen dentro de la tarjeta */
+  display: block;
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+.carousel-item.inactive {
+  left: -100%;
+  opacity: 0;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.offer-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.offer-discount {
+  font-size: 14px;
+  color: #9E9E9E;
+  text-decoration: line-through;
+}
+
+.offer-availability {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.available {
+  background-color: #23A26D;
+  color: white;
+}
+
+.unavailable {
+  background-color: #EA5457;
+  color: white;
+}
+
+.availability-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cart-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #A91F8C;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-icon img {
+  width: 24px;
+  height: 24px;
+}
+.testimonials-container {
+  margin-top: 0; /* Ajusta este margen */
+  padding-top: 20px; /* Asegúrate de usar solo el espacio necesario */
+}
+.offers-title a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Mantiene el color original del título */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.offers-title a:hover {
+  color: #6200ea; /* Cambia el color al pasar el mouse si deseas un efecto */
+}

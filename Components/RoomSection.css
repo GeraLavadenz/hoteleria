@@ -1,0 +1,58 @@
+.room-section {
+  margin: 20px 0;
+}
+
+.room-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separa el título de las flechas */
+  margin-bottom: 10px;
+}
+
+.room-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.room-section-buttons {
+  display: flex;
+  gap: 10px; /* Espaciado entre las flechas */
+}
+
+.nav-button {
+  scale: 2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.room-section-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.room-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.room-section-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

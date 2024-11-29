@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Estilo general del cuerpo */
+body {
+  background-color: var(--background); /* Fondo claro */
+  color: var(--foreground); /* Texto oscuro */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
